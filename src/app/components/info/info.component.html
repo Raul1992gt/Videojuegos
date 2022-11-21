@@ -1,1 +1,18 @@
-<p>info works!</p>
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Titulo</th>
+        <th scope="col">Valoración media</th>
+        <th scope="col">Información</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let videojuegos of Videojuegos">
+      <tr>
+        <th scope="row">{{videojuegos.id}}</th>
+        <td>{{videojuegos.title}}</td>
+        <td>{{videojuegos.rating}}</td>
+        <td>{{videojuegos.detail}}</td>
+      </tr>
+    </tbody>
+  </table>
