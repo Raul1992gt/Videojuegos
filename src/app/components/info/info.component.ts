@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 import videojuegos from 'src/assets/data/videojuegos.json'
 
@@ -9,10 +10,22 @@ import videojuegos from 'src/assets/data/videojuegos.json'
 })
 export class InfoComponent implements OnInit {
 
+  @Input() dataEntrante: any;
   Videojuegos: any = videojuegos;
-  constructor() { }
+  id: number = 0;
+  title: string = '';
+  rating: number = 0;
+  detail: string = '';
+
+  constructor(route:ActivatedRoute) { 
+    this.id = route.snapshot.params["id"];
+    this.title = route.snapshot.params["title"];
+    this.rating = route.snapshot.params["rating"];
+    this.detail = route.snapshot.params["detail"];
+  }
 
   ngOnInit(): void {
   }
+
 
 }

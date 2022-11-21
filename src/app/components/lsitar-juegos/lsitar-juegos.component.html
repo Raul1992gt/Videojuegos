@@ -7,7 +7,7 @@
                     <h5 class="card-title">{{videojuegos.title}}</h5>
                     <h6>Valoración media: {{videojuegos.rating}}</h6>
                     <h6>Compañía: {{videojuegos.company}}</h6>
-                    <a routerLink="/info" class="btn btn-primary">Más información</a>
+                    <a [routerLink]="[ '/info', videojuegos.id, videojuegos.title, videojuegos.rating, videojuegos.detail]" class="btn btn-primary">Más información</a>
                 </div>
               </div>
           </div>
