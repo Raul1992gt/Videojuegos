@@ -8,6 +8,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { LsitarJuegosComponent } from './components/lsitar-juegos/lsitar-juegos.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { NosotrosComponent } from './components/nosotros/nosotros.component';
+import { InfoComponent } from './components/info/info.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NosotrosComponent } from './components/nosotros/nosotros.component';
     FooterComponent,
     LsitarJuegosComponent,
     ContactoComponent,
-    NosotrosComponent
+    NosotrosComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule,
