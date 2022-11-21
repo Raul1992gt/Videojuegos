@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "title": "Call of Duty",
+        "company": "microsfot",
+        "cover": "./assets/img/cod.jpg",
+        "rating": 7.8
+    },
+    {
+        "id":2,
+        "title": "God of War",
+        "company": "SCE Santa Monica Studio",
+        "cover":"./assets/img/GOW.webp",
+        "rating": 8
+    },
+    {
+        "id":3,
+        "title": "Grand Theft Auto V",
+        "company":"Rockstar ",
+        "cover": "./assets/img/GTA.webp",
+        "rating": 7.8
+    },
+    {
+        "id":4,
+        "title": "Zelda",
+        "company":"Nintendo EPD",
+        "cover":"./assets/img/zelda.jpg",
+        "rating": 7.9
+    },
+    {
+        "id":5,
+        "title": "Skyrim",
+        "company": "Bethesda Game Studios",
+        "cover":"./assets/img/skrym.jpg",
+        "rating": 7.8
+    }
+]
