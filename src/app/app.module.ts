@@ -9,6 +9,7 @@ import { LsitarJuegosComponent } from './components/lsitar-juegos/lsitar-juegos.
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { InfoComponent } from './components/info/info.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { InfoComponent } from './components/info/info.component';
     LsitarJuegosComponent,
     ContactoComponent,
     NosotrosComponent,
-    InfoComponent
+    InfoComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
