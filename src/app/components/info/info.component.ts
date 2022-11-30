@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 import videojuegos from 'src/assets/data/videojuegos.json'
+import { Juego } from '../entidades/Juego';
 
 @Component({
   selector: 'app-info',
@@ -11,7 +12,7 @@ import videojuegos from 'src/assets/data/videojuegos.json'
 export class InfoComponent implements OnInit {
 
   @Input() dataEntrante: any;
-  Videojuegos: any = videojuegos;
+  listaJuegos: Juego = videojuegos;
   id: number = 0;
   title: string = '';
   rating: number = 0;

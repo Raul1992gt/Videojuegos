@@ -20,7 +20,7 @@
                   Videojuegos
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown" >
-                  <li><a class="dropdown-item"  *ngFor="let videojuegos of Videojuegos"[routerLink]="[ '/info', videojuegos.id, videojuegos.title, videojuegos.rating, videojuegos.detail]" >{{videojuegos.title}}</a></li>
+                  <li><a class="dropdown-item"  *ngFor="let juego of listaJuegos"[routerLink]="[ '/info', juego.id, juego.title, juego.rating, juego.detail]" >{{juego.title}}</a></li>
                 </ul>
               </li>
             </ul>

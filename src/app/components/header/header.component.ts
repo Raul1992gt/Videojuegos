@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import videojuegos from 'src/assets/data/videojuegos.json'
+import { Juego } from '../entidades/Juego';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -8,7 +9,7 @@ import videojuegos from 'src/assets/data/videojuegos.json'
 })
 export class HeaderComponent implements OnInit {
   
-  Videojuegos: any = videojuegos;
+  listaJuegos: Juego[] = videojuegos;
   
   constructor() { }
 
